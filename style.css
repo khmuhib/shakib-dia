@@ -23,6 +23,7 @@ a {
 
     background-color: lightcoral;
     margin: auto;
+    position: relative;
 }
 .one {
     position: relative;
@@ -36,12 +37,12 @@ a {
 }
 
 .one hr:nth-child(2) {
-    width: 30%;
+    width: 25%;
     height: 5px;
     background-color: black;
     position: absolute;
     top: 200px;
-    right: 235px;
+    right: 297px;
     float: right;
 }
 
@@ -162,4 +163,110 @@ a {
     position: absolute;
     top: 773px;
     right: 225px;
+}
+
+.card_main {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.card_top .card_left {
+    float: left;
+    width: 30%;
+}
+
+.card_top .card_left img{
+    height: 95%;
+    width: 95%;
+    float: left;
+}
+
+.card_top .card_right {
+    float: left;
+    width: 70%;
+}
+
+.card_top .card:nth-child(1) {
+    background-color: aliceblue;
+    overflow: hidden;
+    width: 270px;
+    padding: 5px;
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    margin: auto;
+
+}
+
+.card_top .card:nth-child(2) {
+    background-color: aliceblue;
+    overflow: hidden;
+    width: 270px;
+    padding: 5px;
+    position: absolute;
+    top: 145px;
+    left: 380px;
+    right: 0px;
+    margin: auto;
+
+}
+
+
+/*  */
+
+
+.card_bottom {
+    background-color: aqua;
+    position: absolute;
+    top: 145px;
+    left: 0px;
+
+}
+
+.card_bottom .card {
+    background-color: blueviolet;
+}
+
+.card_bottom .card_left {
+    float: left;
+    width: 30%;
+}
+
+.card_bottom .card_left img{
+    height: 95%;
+    width: 95%;
+    float: left;
+}
+
+.card_bottom .card_right {
+    float: left;
+    width: 70%;
+}
+
+.card_bottom .card:nth-child(1) {
+    background-color: aliceblue;
+    overflow: hidden;
+    width: 270px;
+    padding: 5px;
+    position: relative;
+}
+
+.card_bottom .card:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+
+    left: 100%;
+    top: 0px;
+    display: block;
+    z-index: 50;
 }
