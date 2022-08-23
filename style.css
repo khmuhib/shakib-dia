@@ -18,7 +18,7 @@ a {
 }
 
 .mid {
-    width: 1200px;
+    width: 1300px;
     height: 1000px;
 
     background-color: lightcoral;
@@ -37,23 +37,24 @@ a {
 }
 
 .one hr:nth-child(2) {
-    width: 25%;
+    width: 21%;
     height: 5px;
     background-color: black;
     position: absolute;
     top: 200px;
-    right: 297px;
+    right: 373px;
     float: right;
 }
 
 .one hr:nth-child(3) {
-    width: 60%;
+    width: 785px;
     height: 5px;
-    background-color: red;
+    background-color: black;
     position: absolute;
     top: 300px;
-    right: 300px;
+    right: 280px;
     float: right;
+    border: none;
 }
 
 .one_left {
@@ -115,7 +116,7 @@ a {
     padding: 5px;
     position: absolute;
     top: 145px;
-    left: 380px;
+    left: 323px;
     right: 0px;
     margin: auto;
 
@@ -123,7 +124,16 @@ a {
 
 .card_main_2 {
     position: relative;
-    background-color: blue;
+    width: 40%;
+    float: left;
+    margin-top: 50px;
+}
+
+.card_main_3 {
+    position: relative;
+    width: 60%;
+    float: right;
+    margin-top: 50px;
 }
 
 
@@ -145,7 +155,7 @@ a {
 
 .loop_card{
     background-color: aqua;
-    width: 270px;
+    width: 200px;
     padding: 5px;
     display: inline-block;
     position: relative;
@@ -158,7 +168,7 @@ a {
     display: block;
     height: 5px;
     width: 50px;
-    background-color: orange;
+    background-color: black;
     left: 100%;
     top: 55px;
     position: absolute;
@@ -169,10 +179,11 @@ a {
     display: block;
     height: 5px;
     width: 145px;
-    background-color: orange;
-    left: 84%;
-    top: 70px;
+    background-color: black;
+    left: 79%;
+    top: 23px;
     position: absolute;
     transform: rotate(90deg);
 }
+
 
