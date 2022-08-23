@@ -56,25 +56,6 @@ a {
     float: right;
 }
 
-
-.one hr:nth-child(4) {
-    width: 5px;
-    height: 450px;
-    background-color: yellow;
-    position: absolute;
-    top: 307px;
-    left: 179px;
-}
-
-.one hr:nth-child(5) {
-    width: 5px;
-    height: 470px;
-    background-color: lightgreen;
-    position: absolute;
-    top: 307px;
-    right: 300px;
-}
-
 .one_left {
     width: 5px;
     height: 500px;
@@ -84,86 +65,7 @@ a {
     left: 179px;
 }
 
-.one hr:nth-child(6) {
-    width: 100px;
-    height: 5px;
-    background-color: yellow;
-    position: absolute;
-    top: 399px;
-    left: 133px;
-}
 
-.one hr:nth-child(7) {
-    width: 100px;
-    height: 5px;
-    background-color: lightgreen;
-    position: absolute;
-    top: 490px;
-    left: 133px;
-}
-
-.one hr:nth-child(8) {
-    width: 100px;
-    height: 5px;
-    background-color: lightgreen;
-    position: absolute;
-    top: 581px;
-    left: 133px;
-}
-
-.one hr:nth-child(9) {
-    width: 100px;
-    height: 5px;
-    background-color: lightgreen;
-    position: absolute;
-    top: 672px;
-    left: 133px;
-}
-
-.one hr:nth-child(10) {
-    width: 350px;
-    height: 5px;
-    background-color: red;
-    position: absolute;
-    top: 399px;
-    right: 130px;
-}
-
-.one hr:nth-child(11) {
-    width: 350px;
-    height: 5px;
-    background-color: red;
-    position: absolute;
-    top: 490px;
-    right: 130px;
-}
-
-.one hr:nth-child(12) {
-    width: 350px;
-    height: 5px;
-    background-color: red;
-    position: absolute;
-    top: 581px;
-    right: 130px;
-}
-
-.one hr:nth-child(13) {
-    width: 350px;
-    height: 5px;
-    background-color: red;
-    position: absolute;
-    top: 672px;
-    right: 130px;
-}
-
-.one hr:nth-child(14) {
-    width: 150px;
-    height: 5px;
-    background-color: red;
-    position: absolute;
-    top: 773px;
-    right: 225px;
-}
 
 .card_main {
     height: 100%;
@@ -172,25 +74,26 @@ a {
     position: absolute;
     top: 0px;
     left: 0px;
+    height: 450px;
 }
 
-.card_top .card_left {
+.card_left {
     float: left;
     width: 30%;
 }
 
-.card_top .card_left img{
+.card_left img{
     height: 95%;
     width: 95%;
     float: left;
 }
 
-.card_top .card_right {
+.card_right {
     float: left;
     width: 70%;
 }
 
-.card_top .card:nth-child(1) {
+.card:nth-child(1) {
     background-color: aliceblue;
     overflow: hidden;
     width: 270px;
@@ -205,7 +108,7 @@ a {
 
 }
 
-.card_top .card:nth-child(2) {
+.card:nth-child(2) {
     background-color: aliceblue;
     overflow: hidden;
     width: 270px;
@@ -218,55 +121,58 @@ a {
 
 }
 
-
-/*  */
-
-
-.card_bottom {
-    background-color: aqua;
-    position: absolute;
-    top: 145px;
-    left: 0px;
-
+.card_main_2 {
+    position: relative;
+    background-color: blue;
 }
 
-.card_bottom .card {
-    background-color: blueviolet;
-}
 
-.card_bottom .card_left {
+.loop_card_left {
     float: left;
     width: 30%;
 }
 
-.card_bottom .card_left img{
+.loop_card_left img{
     height: 95%;
     width: 95%;
     float: left;
 }
 
-.card_bottom .card_right {
+.loop_card_right {
     float: left;
     width: 70%;
 }
 
-.card_bottom .card:nth-child(1) {
-    background-color: aliceblue;
-    overflow: hidden;
+.loop_card{
+    background-color: aqua;
     width: 270px;
     padding: 5px;
+    display: inline-block;
     position: relative;
+    margin-right: 46px;
+
 }
 
-.card_bottom .card:nth-child(1)::before {
+.abc::before {
     content: "";
-    position: absolute;
-    background-color: red;
-    height: 20px;
-    width: 20px;
-
-    left: 100%;
-    top: 0px;
     display: block;
-    z-index: 50;
+    height: 5px;
+    width: 50px;
+    background-color: orange;
+    left: 100%;
+    top: 55px;
+    position: absolute;
 }
+
+.abc::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 145px;
+    background-color: orange;
+    left: 84%;
+    top: 70px;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
